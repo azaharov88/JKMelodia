@@ -107,8 +107,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     opacity: 0;
     cursor: pointer;
 }
-.house path:hover{
-    opacity: 0.75;
+
+.active_floor {
+    opacity: 0.75 !important;
 }
 .main-wrapper {
     display: flex;
