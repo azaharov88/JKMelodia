@@ -11,6 +11,7 @@ let flats = document.querySelectorAll('.modal_svg path');
 const modalFlats = document.querySelectorAll('.modal_flat');
 const burger = document.querySelector('.menu-burger');
 const navbar = document.querySelector('.navbar');
+const wrapper = document.querySelector('.wrapper');
 
 burger.addEventListener('click', (event => {
     burger.classList.toggle('open-menu');
@@ -31,7 +32,7 @@ function deleteActiveFlat() {
 }
 
 function toggleModal() {
-    document.body.classList.toggle('lock');
+    wrapper.classList.toggle('lock');
     modal.classList.toggle('modal_active');
     flats.forEach(flat => {
     let flatNumber = modalFlats[flat.dataset.flat-1].querySelector('.flat_number');

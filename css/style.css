@@ -84,10 +84,6 @@ h1, h2, h3, h4, h5, h6 {
     font-display: swap;
 }
 
-.lock {
-    overflow: hidden;
-}
-
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -753,7 +749,7 @@ h1, h2, h3, h4, h5, h6 {
 .modal {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.8);
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     display: flex;
@@ -924,4 +920,9 @@ h1, h2, h3, h4, h5, h6 {
         top: 38px;
         background-color: #fff;
     }
+}
+
+.lock {
+    overflow: hidden;
+    max-height: 100%;
 }
