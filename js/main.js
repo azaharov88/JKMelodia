@@ -31,7 +31,6 @@ function deleteActiveFlat() {
 }
 
 function toggleModal() {
-    //window.scrollTo(0,0);
     document.body.classList.toggle('lock');
     modal.classList.toggle('modal_active');
     flats.forEach(flat => {
