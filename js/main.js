@@ -9,6 +9,14 @@ const seeFlats = document.querySelector('.button-primary');
 const modalFloorNumber = document.querySelector('.modal_title span');
 let flats = document.querySelectorAll('.modal_svg path');
 const modalFlats = document.querySelectorAll('.modal_flat');
+const burger = document.querySelector('.menu-burger');
+const navbar = document.querySelector('.navbar');
+
+burger.addEventListener('click', (event => {
+    burger.classList.toggle('open-menu');
+    navbar.classList.toggle('open-menu')
+}))
+
 
 function deleteActiveFloor() {
     const floor = document.querySelector('.active_floor');
@@ -23,6 +31,8 @@ function deleteActiveFlat() {
 }
 
 function toggleModal() {
+    //window.scrollTo(0,0);
+    document.body.classList.toggle('lock');
     modal.classList.toggle('modal_active');
     flats.forEach(flat => {
     let flatNumber = modalFlats[flat.dataset.flat-1].querySelector('.flat_number');
@@ -110,3 +120,7 @@ flats.forEach(flat => {
         flat.classList.add('active_flat');
     })
 })
+
+
+
+
